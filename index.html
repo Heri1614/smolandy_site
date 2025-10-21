@@ -60,36 +60,10 @@
       cursor: pointer;          /* Cambia el cursor al pasar el mouse */
     }
 
-        /* === TELARAÑAS EN LAS ESQUINAS SUPERIORES === */
-    .telarana {
-      position: fixed;          /* Fijo: se mantiene visible aunque haya scroll */
-      width: 220px;             /* Tamaño base del GIF */
-      height: auto;
-      z-index: 5;               /* Detrás de los GIFs de redes, pero encima del fondo */
-      opacity: 0.85;            /* Leve transparencia para integrarlo al fondo */
-      pointer-events: none;     /* No bloquea clics en otros elementos */
-    }
-
-    /* Posiciones específicas */
-    .telarana-izq {
-      top: 0;                   /* Pegado arriba */
-      left: 0;                  /* Pegado a la izquierda */
-    }
-
-    .telarana-der {
-      top: 0;
-      right: 0;                 /* Pegado a la derecha */
-      transform: scaleX(-1);    /* Refleja la telaraña horizontalmente */
-    }
-
   </style>
 </head>
   <!-- GIF de SmolAndy (lateral inferior izquierdo) -->
   <img src="TGandy.gif" alt="SmolAndy GIF" class="gif-andy">
-
-    <!-- Telarañas en las esquinas superiores -->
-  <img src="Telaraña.gif" alt="Telaraña izquierda" class="telarana telarana-izq">
-  <img src="Telaraña.gif" alt="Telaraña derecha" class="telarana telarana-der">
 
 <body>
   <!-- Contenedor principal -->
