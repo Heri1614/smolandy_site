@@ -3,45 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fondo oscuro con encabezado</title>
+  <title>SmolAndy — Encabezado PNG</title>
 
   <style>
-    /* Estilos generales */
+    /* === CONFIGURACIÓN GENERAL === */
     html, body {
-      margin: 0;             /* Quita bordes/márgenes del navegador */
-      height: 100%;          /* La página usa toda la altura */
-      background-color: #0b0b0b;  /* Fondo oscuro */
-      display: flex;         /* Permite centrar el contenido fácilmente */
-      align-items: center;   /* Centra verticalmente */
-      justify-content: center; /* Centra horizontalmente */
-      flex-direction: column; /* Coloca elementos uno debajo de otro */
+      margin: 0;                /* Quita márgenes por defecto */
+      height: 100%;             /* Hace que el fondo ocupe toda la pantalla */
+      background-color: #0b0b0b;/* Fondo oscuro */
+      display: flex;            /* Activa el modo flexbox para centrar contenido */
+      align-items: center;      /* Centra verticalmente */
+      justify-content: center;  /* Centra horizontalmente */
     }
 
-    /* Contenedor del video */
+    /* === CONTENEDOR DEL ENCABEZADO === */
     .encabezado {
-      width: 100%;           /* El video ocupa todo el ancho */
-      max-width: 1200px;     /* Pero no más de 1200px, para que no se deforme */
-      text-align: center;    /* Centra el video dentro del div */
+      width: 100%;              /* El contenedor usa todo el ancho */
+      max-width: 1200px;        /* Pero no más de 1200px en pantallas grandes */
+      text-align: center;       /* Centra el contenido dentro del div */
     }
 
-    /* El propio video */
-    video {
-      width: 100%;           /* Ocupa todo el ancho disponible */
-      height: auto;          /* Mantiene proporción correcta */
-      border-radius: 12px;   /* Bordes suavemente redondeados */
+    /* === IMAGEN DEL LOGO === */
+    .encabezado img {
+      width: 90%;               /* Escala el logo para ocupar 90% del ancho del contenedor */
+      height: auto;             /* Mantiene proporciones correctas */
+      display: block;           /* Elimina espacios debajo de la imagen */
+      margin: 0 auto;           /* Centra horizontalmente */
+      image-rendering: crisp-edges; /* Mantiene los bordes nítidos si es pixel art */
     }
   </style>
 </head>
 
 <body>
-  <!-- Contenedor principal del encabezado -->
+  <!-- Contenedor principal -->
   <div class="encabezado">
-    <!-- Aquí insertamos el video -->
-    <video autoplay muted loop playsinline>
-      <!-- ⚠️ Reemplaza la ruta de abajo por el enlace RAW de tu video -->
-      <source src="EncabezadoSmol.mp4" type="video/mp4">
-      Tu navegador no soporta video HTML5.
-    </video>
+    <img src="EncabezadoAndy.png" alt="Encabezado SmolAndy">
   </div>
 </body>
 </html>
