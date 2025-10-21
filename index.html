@@ -6,15 +6,23 @@
   <title>SmolAndy — Encabezado PNG</title>
 
   <style>
-    /* === CONFIGURACIÓN GENERAL === */
-    html, body {
-      margin: 0;                /* Quita márgenes por defecto */
-      height: 100%;             /* Hace que el fondo ocupe toda la pantalla */
-      background-color: #0b0b0b;/* Fondo oscuro */
-      display: flex;            /* Activa el modo flexbox para centrar contenido */
-      align-items: center;      /* Centra verticalmente */
-      justify-content: center;  /* Centra horizontalmente */
-    }
+  /* === CONFIGURACIÓN GENERAL === */
+html, body {
+  margin: 0;                 /* sin márgenes */
+  height: 100%;              /* ocupa toda la pantalla */
+  background-color: #0b0b0b; /* fondo oscuro */
+}
+
+/* El body ahora organiza en columna y empieza desde ARRIBA */
+body{
+  display: flex;             /* activa flexbox */
+  flex-direction: column;    /* apila: encabezado, luego botones, etc. */
+  align-items: center;       /* centrado horizontal */
+  justify-content: flex-start; /* comienza desde arriba (no centrado vertical) */
+  padding-top: 120px;        /* empuje desde arriba ≈ posición marcada en tu captura */
+  gap: 24px;                 /* separación vertical entre bloques */
+}
+
 
     /* === CONTENEDOR DEL ENCABEZADO === */
     .encabezado {
