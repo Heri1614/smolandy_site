@@ -31,8 +31,22 @@
       margin: 0 auto;           /* Centra horizontalmente */
       image-rendering: crisp-edges; /* Mantiene los bordes nítidos si es pixel art */
     }
+
+        /* === GIF DE SMOLANDY (IZQUIERDA) === */
+    .gif-andy {
+      position: fixed;      /* Lo deja fijo, no se mueve al hacer scroll */
+      bottom: 20px;         /* Separado 20px del borde inferior */
+      left: 20px;           /* Separado 20px del borde izquierdo */
+      width: 140px;         /* Tamaño del GIF */
+      height: auto;         /* Mantiene proporciones */
+      z-index: 100;         /* Lo pone encima del resto del contenido */
+      cursor: pointer;      /* (más adelante servirá como enlace clicable) */
+    }
+
   </style>
 </head>
+  <!-- GIF de SmolAndy (lateral inferior izquierdo) -->
+  <img src="TGandy.gif" alt="SmolAndy GIF" class="gif-andy">
 
 <body>
   <!-- Contenedor principal -->
