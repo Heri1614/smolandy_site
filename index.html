@@ -42,6 +42,14 @@
       z-index: 100;         /* Lo pone encima del resto del contenido */
       cursor: pointer;      /* (más adelante servirá como enlace clicable) */
     }
+    /* === GIF CLICABLE DE X (DEBAJO DEL ENCABEZADO) === */
+    .link-x {
+      display: block;        /* Lo tratamos como bloque para poder centrarlo */
+      width: 140px;          /* Tamaño del GIF */
+      height: auto;          /* Mantiene proporciones */
+      margin: 40px auto 0;   /* Centrado y con espacio arriba */
+      cursor: pointer;       /* Cambia el cursor para indicar que es clicable */
+    }
 
   </style>
 </head>
@@ -53,5 +61,10 @@
   <div class="encabezado">
     <img src="EncabezadoAndy.png" alt="Encabezado SmolAndy">
   </div>
+    <!-- GIF clicable que redirige al perfil de X -->
+  <a href="https://x.com/smolandycto?t=5vqG0J2kKRgEkLjmvHY7eQ&s=09" target="_blank" rel="noopener">
+    <img src="X.gif" alt="SmolAndy en X" class="link-x">
+  </a>
+
 </body>
 </html>
