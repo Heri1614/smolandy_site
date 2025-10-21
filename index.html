@@ -2,28 +2,46 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <!-- ↑ Esto define que el sitio use el alfabeto estándar (acentos, ñ, etc.) -->
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- ↑ Hace que la página se adapte bien en celulares y pantallas pequeñas -->
-
-  <title>Fondo oscuro</title>
-  <!-- ↑ El título que aparece en la pestaña del navegador -->
+  <title>Fondo oscuro con encabezado</title>
 
   <style>
-    /* Aquí empieza el estilo visual (CSS) */
-
-    /* Le decimos al navegador que el fondo será negro y ocupe toda la pantalla */
+    /* Estilos generales */
     html, body {
-      margin: 0;        /* Elimina márgenes por defecto */
-      height: 100%;     /* Hace que el fondo cubra toda la altura */
-      background-color: #0b0b0b;  /* Color de fondo oscuro (negro grisáceo) */
+      margin: 0;             /* Quita bordes/márgenes del navegador */
+      height: 100%;          /* La página usa toda la altura */
+      background-color: #0b0b0b;  /* Fondo oscuro */
+      display: flex;         /* Permite centrar el contenido fácilmente */
+      align-items: center;   /* Centra verticalmente */
+      justify-content: center; /* Centra horizontalmente */
+      flex-direction: column; /* Coloca elementos uno debajo de otro */
     }
 
-    /* No hay más estilos, porque de momento solo queremos el fondo oscuro */
+    /* Contenedor del video */
+    .encabezado {
+      width: 100%;           /* El video ocupa todo el ancho */
+      max-width: 1200px;     /* Pero no más de 1200px, para que no se deforme */
+      text-align: center;    /* Centra el video dentro del div */
+    }
+
+    /* El propio video */
+    video {
+      width: 100%;           /* Ocupa todo el ancho disponible */
+      height: auto;          /* Mantiene proporción correcta */
+      border-radius: 12px;   /* Bordes suavemente redondeados */
+    }
   </style>
 </head>
+
 <body>
-  <!-- El cuerpo (body) está vacío, por eso solo se ve el fondo -->
+  <!-- Contenedor principal del encabezado -->
+  <div class="encabezado">
+    <!-- Aquí insertamos el video -->
+    <video autoplay muted loop playsinline>
+      <!-- ⚠️ Reemplaza la ruta de abajo por el enlace RAW de tu video -->
+      <source src="EncabezadoSmol.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
+  </div>
 </body>
 </html>
